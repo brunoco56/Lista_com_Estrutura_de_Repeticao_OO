@@ -7,14 +7,14 @@ namespace Arduino
     {
         static void Main(string[] args)
         {
-            char resposta ='N';            
-           DateTime data = DateTime.Now;            
-            
+            char resposta = 'N';
+            DateTime data = DateTime.Now;
+
             List<Pessoa> usuarios = new List<Pessoa>();
 
             do
             {
-                Pessoa pessoa = new Pessoa();               
+                Pessoa pessoa = new Pessoa();
 
                 Console.WriteLine("*************");
                 Console.WriteLine("Digite seu nome:");
@@ -26,7 +26,7 @@ namespace Arduino
                 usuarios.Add(pessoa);
                 Console.WriteLine("Deseja finalizar? S/N ");
                 resposta = char.Parse(Console.ReadLine());
-                Console.WriteLine("***********************");                
+                Console.WriteLine("***********************");
 
             } while (resposta == 'N');
 
